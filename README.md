@@ -1,12 +1,12 @@
 # Virtusa Mini Project Collection
 
-This repository bundles **three small, standalone projects** in different technologies: **Python**, **Java**, and **SQL (MySQL)**. Each folder is self-contained with its own source files and a short README.
+Hey — this repo is a small bundle of **three standalone projects** in **Python**, **Java**, and **SQL (MySQL)**. Each folder is its own thing: its own code and a short README inside, so you can jump straight to whatever you’re curious about.
 
-Use this repo for learning, demos, or coursework—nothing here requires paid services or cloud accounts.
+I put this together for learning, demos, or coursework. Nothing here needs paid APIs or a cloud signup; you can run it all locally.
 
 ---
 
-## Repository layout
+## What’s inside
 
 ```
 Virtusa-mini-project/
@@ -18,7 +18,7 @@ Virtusa-mini-project/
 
 ---
 
-## Prerequisites
+## Before you start
 
 | Project | What you need |
 |--------|----------------|
@@ -26,7 +26,7 @@ Virtusa-mini-project/
 | **Java** | [JDK](https://adoptium.net/) 8 or newer (`javac` and `java` on your PATH) |
 | **SQL** | [MySQL Server](https://dev.mysql.com/downloads/mysql/) (Workbench optional, for GUI) |
 
-Install only what you plan to run.
+Install only what you plan to run — no need to clutter your machine with everything at once.
 
 ---
 
@@ -34,7 +34,7 @@ Install only what you plan to run.
 
 **Folder:** `Python_FareCalc_Project/`
 
-Estimates a ride fare from **distance (km)**, **vehicle type** (Economy / Premium / SUV), and **hour of day** (0–23). Applies **evening surge** (1.5×) between **17:00 and 20:00**.
+This one estimates a ride fare from **distance (km)**, **vehicle type** (Economy / Premium / SUV), and **hour of day** (0–23). There’s **evening surge** (1.5×) between **17:00 and 20:00**.
 
 ### Run
 
@@ -43,7 +43,7 @@ cd Python_FareCalc_Project
 python main.py
 ```
 
-On Windows, if `python` is not found, try `py main.py`.
+On Windows, if `python` isn’t found, try `py main.py`.
 
 More detail and sample I/O: see `Python_FareCalc_Project/README.md`.
 
@@ -53,7 +53,7 @@ More detail and sample I/O: see `Python_FareCalc_Project/README.md`.
 
 **Folder:** `Java_FinSafe_Project/`
 
-A **menu-driven** console app: deposit, withdraw, check balance, and a **mini statement** of the last five transactions. Uses **encapsulation**, a **custom exception** for insufficient funds, and **`IllegalArgumentException`** for invalid amounts.
+A **menu-driven** console app: deposit, withdraw, check balance, and a **mini statement** of the last five transactions. It uses **encapsulation**, a **custom exception** for insufficient funds, and **`IllegalArgumentException`** for invalid amounts.
 
 ### Run
 
@@ -71,7 +71,7 @@ More detail: see `Java_FinSafe_Project/README.md`.
 
 **Folder:** `SQL_DigitalLibrary_Project/`
 
-MySQL script that creates a **`digital_library`** database with tables for **books**, **students**, and **issued books**, loads sample data, and runs example queries (overdue books, popular category, inactive students, overdue penalty).
+A MySQL script that creates a **`digital_library`** database with tables for **books**, **students**, and **issued books**, loads sample data, and runs example queries (overdue books, popular category, inactive students, overdue penalty).
 
 ### Run (command line)
 
@@ -90,14 +90,16 @@ More detail: see `SQL_DigitalLibrary_Project/README.md`.
 
 ---
 
-## Tips for GitHub
+## Tips if you’re using GitHub
 
-- Add a **`.gitignore`** if you use Java builds locally (ignore `*.class`). Python users often ignore `__pycache__/`.
-- This repo has **no** shared build tool (no Maven/Gradle/npm); each subproject is intentionally simple.
-- If you re-run `library.sql` on the same server, drop or rename the old database first, or adjust the script so it does not clash with existing data.
+- If you build Java locally, a **`.gitignore`** helps (e.g. ignore `*.class`). For Python, people often ignore `__pycache__/`.
+- There’s no shared build tool here (no Maven/Gradle/npm) on purpose — each subproject stays simple.
+- If you re-run `library.sql` on the same server, drop or rename the old database first, or tweak the script so it doesn’t step on existing data.
 
 ---
 
-## License
+## Contributors
 
-No license is specified by default. If you need one for submission or open source, add a `LICENSE` file (e.g. MIT) in the repository root.
+**Sukrit Raj** — SRM Institute of Science and Technology (SRMIST)
+
+This collection is maintained and contributed by Sukrit. If you fork or extend these projects, you’re welcome to add yourself here too.
